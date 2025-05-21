@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookSphere</title>  
+    <link rel="icon" href="https://thumbs.dreamstime.com/b/hand-book-logo-illustration-art-background-43965136.jpg" alt="image" height="50px" width="50px"" type="image/x-icon">
+</head>
+<body>
+        <form action="./home.html">
+            <fieldset>
+                <legend> <h1>Register Page</h1></legend>
+                <label for="name"><b>Name * </b></label >
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                <br><br>
+                <label for="email"><b>Email * </b></label>
+                <input type="email"  id="email" name="email" placeholder="Enter your email" pattern="^[a-z0-9+_*&^%$#]+@gmail\.[a-z]{2,4}" title="enter correct format">
+                <br><br>
+                <label for="password"><b>Password *</b></label>
+                <input type="text" id="password" name="password" pattern="(?=.*[A-z])(?=.*[a-z])(?=.*[0-9])(?=.*[!@#$%^&*]).{8,16}" pattern="password should atleast 8 characters">
+                <br><br>
+                <label for="number"><b>PhoneNumber * </b></label>
+                <input type="tel"  id="number" name="number" placeholder="Enter your number" pattern="^\+91\s[6-9][0-9]{9}$" title="enter correct format">
+                <br><br>
+                <label for="dob"><b>Date of Birth </b></label>
+                <input type="text"  id="dob" name="dob" pattern="^\d{4}-(0[1-9]|1[0-9])-(0[1-9]|[1-2]\d|3[0-2])$" title="Enter correct format(yyyy-mm-dd)">
+                <br><br>
+                <label><b>age </b></label>
+                <input type="checkbox">
+                <label><b>0-10years</b></label>
+                <input type="checkbox">
+                <label><b>11-20years</b></label>
+                <input type="checkbox">
+                <label><b>21-40</b></label>
+                <input type="checkbox">
+                <label><b>Above 40</b></label>
+                <br><br>
+                <label for=""><b>Gender </b></label>
+                <input type="radio" id="female" name="gender">
+                <label for="female"><b>Female </b></label>
+                <input type="radio" id="male" name="gender">
+                <label for="male"><b>Male </b></label></center>
+                <br><br>
+                 <label for=""><b>Choose a Book Genre: *</b> </label>
+                <select name="bookgenre">
+                <option value="" selected disable>----Select---</option>
+                <option value="Mystery & Thriller">Mystery & Thriller</option>
+                <option value="Science Fiction & Fantasy">Science Fiction & Fantasy</option>
+                <option value="Science & Technology">Science & Technology</option>
+                <option value="biography">Biographies & History</option>
+                <option value="bedtime">Bedtime Stories</option>
+                </select>
+                <br><br>
+                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="submit" value="submit">
+            </fieldset>
+        </form>
+    
+</body>
+</html>
